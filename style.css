@@ -1,0 +1,91 @@
+body {
+    background-color: #080A0B;
+    color: white;
+    margin: 10rem auto;
+    text-align: center;
+    align-content: center;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.2rem;
+
+    font-family: "Lalezar", serif;
+    font-weight: 400;
+}
+
+/* Aplicar gradiente ao texto na tag span */
+.gradient-text {
+    background: linear-gradient(100deg, #f57b0a, #f704b3, #1dd1a1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+p {
+    font-size: 1.35rem;
+    margin-bottom: 4.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 2.5rem;
+
+}
+
+a {
+    background-color:#23BD2C;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+
+    font-size: 1.5rem;
+    border-radius: .5rem;
+}
+
+a:hover {
+    background-color:#0e8616;
+}
+
+#bg-image {
+    background-image: url("https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    opacity: 0.3;
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+@media (width < 40rem) {
+    html {
+        font-size:70%;
+    }
+}
+
+/* Animações */
+
+h1, p, a {
+    animation: appear 1s backwards;
+}
+
+h1 {
+    animation-delay: 0.2s;
+}
+
+p {
+    animation-delay: 0.8s;
+}
+
+a {
+    animation-delay: 1.6s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+}
